@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Add SQL Connector jar">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MathTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/ChooseYourTopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/englishTopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/generalTopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/mathTopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/quizAppTitle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/TopicMenuView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MathController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MathGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com.main.game/MathGameUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.main.game/ChoiceGameUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +27,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2RTCbCJAaHIHLA0tzZXcCtTvHgf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,8 +56,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "D:/PrivateProperty/Coding/JAVA/PDProject/src/main/resources/com",
-    "last_opened_file_path": "D:/PrivateProperty/Coding/JAVA/PDProject/mysql-connector-j-8.0.33.jar",
-    "project.structure.last.edited": "Problems",
+    "last_opened_file_path": "C:/Users/Jean/IdeaProjects/PD_Project/mysql-connector-j-8.0.33.jar",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -58,10 +73,11 @@
       <recent name="D:\PrivateProperty\Coding\JAVA\PDProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jean\IdeaProjects\PD_Project\src\main\resources\com\example" />
       <recent name="D:\PrivateProperty\Coding\JAVA\PDProject" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.testing">
+  <component name="RunManager" selected="Application.UITesting">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.pdproject.HelloApplication" />
       <module name="PDProject" />
@@ -75,8 +91,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sqlConnectionPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.sqlConnectionPractice" />
+    <configuration name="MathTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.MathTesting" />
+      <module name="PDProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pdproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UITesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.UITesting" />
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
@@ -108,12 +137,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="JavaFx" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="JavaFx" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UITesting" />
+        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.MathTesting" />
         <item itemvalue="Application.testing" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.sqlConnectionPractice" />
-        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -170,5 +213,16 @@
     <MESSAGE value="Add SQL Connection, some practice files" />
     <MESSAGE value="Add SQL Connector jar" />
     <option name="LAST_COMMIT_MESSAGE" value="Add SQL Connector jar" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
