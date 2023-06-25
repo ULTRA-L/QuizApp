@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Add SQL Connection, some practice files">
-      <change afterPath="$PROJECT_DIR$/mysql-connector-j-8.0.33.jar" afterDir="false" />
+    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Add SQL Connector jar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/testing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MathController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MathGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.main.game/MathGameUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.main.game/ChoiceGameUI.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "D:/PrivateProperty/Coding/JAVA/PDProject/src/main/resources/com",
     "last_opened_file_path": "D:/PrivateProperty/Coding/JAVA/PDProject/mysql-connector-j-8.0.33.jar",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -151,13 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687622207749</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add SQL Connector jar">
+      <created>1687622837871</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687622837871</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Add package, math game" />
     <MESSAGE value="Add SQL Connection, some practice files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add SQL Connection, some practice files" />
+    <MESSAGE value="Add SQL Connector jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SQL Connector jar" />
   </component>
 </project>
