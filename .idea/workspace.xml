@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/GeneralQuizController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/MainMenuViewControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/DifficultyMenuView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/NameEntryView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/ChoiceGameUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.main.game/ChoiceGameUI.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/Users/Jean/IdeaProjects/PD_Project/src/main/java/com/example/pdproject",
-    "last_opened_file_path": "C:/Users/Jean/IdeaProjects/PD_Project/mysql-connector-j-8.0.33.jar",
+    "last_opened_file_path": "D:/PrivateProperty/Coding/JAVA/PD_Project/mysql-connector-j-8.0.33.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -71,11 +66,38 @@
       <recent name="D:\PrivateProperty\Coding\JAVA\PDProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PrivateProperty\Coding\JAVA\PD_Project\src\main\resources\com\example\pdproject" />
       <recent name="C:\Users\Jean\IdeaProjects\PD_Project\src\main\resources\com\example" />
       <recent name="D:\PrivateProperty\Coding\JAVA\PDProject" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UITesting">
+  <component name="RunManager" selected="Application.ChoiceGame">
+    <configuration name="ChoiceGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.Game.ChoiceGame" />
+      <module name="PDProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.main.Game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneralQuizController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.Game.GeneralQuizController" />
+      <module name="PDProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.main.Game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.pdproject.HelloApplication" />
       <module name="PDProject" />
@@ -89,8 +111,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.MathTesting" />
+    <configuration name="MainMenuViewControl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.Game.MainMenuViewControl" />
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
@@ -115,26 +137,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.testing" />
-      <module name="PDProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.main.Game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="JavaFx" />
       <method v="2">
@@ -150,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChoiceGame" />
+        <item itemvalue="Application.GeneralQuizController" />
+        <item itemvalue="Application.MainMenuViewControl" />
         <item itemvalue="Application.UITesting" />
         <item itemvalue="Application.HelloApplication" />
-        <item itemvalue="Application.MathTesting" />
-        <item itemvalue="Application.testing" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
