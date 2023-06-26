@@ -8,13 +8,6 @@
      -fx-background-radius: 20px;
  }
 
- .button:hover {
-     -fx-background-color: brightness(red, 1.2);
-     -fx-scale-x: 1.1;
-     -fx-scale-y: 1.1;
-     -fx-transition: -fx-scale-x 1s, -fx-scale-y 1s;
- }
-
 #btnStart, #btnAbout {
     -fx-effect: dropshadow(gaussian, rgba(243, 88, 166, 0.5), 2, 2, 5, 5),
                 dropshadow(gaussian, rgba(243, 88, 166, 0.5), -2, -2, 5, 5),
@@ -29,6 +22,24 @@
                 dropshadow(gaussian, rgba(177, 123, 234, 0.5), -2, 2, 5, 5);
 }
 
+#btnStart:hover {
+     -fx-scale-x: 1.1;
+     -fx-scale-y: 1.1;
+     -fx-transition: -fx-scale-x 1s, -fx-scale-y 1s;
+}
+
+#btnAbout:hover {
+     -fx-scale-x: 1.1;
+     -fx-scale-y: 1.1;
+     -fx-transition: -fx-scale-x 1s, -fx-scale-y 1s;
+}
+
+#btnExit:hover {
+     -fx-scale-x: 1.1;
+     -fx-scale-y: 1.1;
+     -fx-transition: -fx-scale-x 1s, -fx-scale-y 1s;
+}
+
 #anchorPaneMain{
 -fx-effect: dropshadow(gaussian, rgba(150, 150, 150, 0.5), 2, 2, 5, 5),
             dropshadow(gaussian, rgba(150, 150, 150, 0.5), -2, -2, 5, 5),
@@ -41,21 +52,63 @@
     -fx-border-radius: 35px;
 }
 
+.difficultyButtonsStyle {
+    -fx-effect: dropshadow(gaussian, rgba(198, 57, 62, 1), 2, 2, 3, 3),
+                dropshadow(gaussian, rgba(198, 57, 62, 1), -2, -2, 3, 3),
+                dropshadow(gaussian, rgba(198, 57, 62, 1), 2, -2, 3, 3),
+                dropshadow(gaussian, rgba(198, 57, 62, 1), -2, 2, 3, 3);
+    -fx-font-size: 30px;
+    -fx-background-color: white;
+    -fx-background-radius: 22px;
+}
+
+.difficultyButtonsStyle:hover {
+    -fx-translate-y: -13;
+}
+
+.anchorPaneMainTopic{
+-fx-effect: dropshadow(gaussian, rgba(198, 57, 62, 1), 2, 2, 3, 3),
+            dropshadow(gaussian, rgba(198, 57, 62, 1), -2, -2, 3, 3),
+            dropshadow(gaussian, rgba(198, 57, 62, 1), 2, -2, 3, 3),
+            dropshadow(gaussian, rgba(198, 57, 62, 1), -2, 2, 3, 3);
+    -fx-background-color: white;
+    -fx-background-radius: 38px;
+    -fx-border-color: #c6393e;
+    -fx-border-width: 2px;
+    -fx-border-radius: 35px;
+}
+
 #anchorPaneMainTopic{
 -fx-effect: dropshadow(gaussian, rgba(150, 150, 150, 0.5), 2, 2, 5, 5),
             dropshadow(gaussian, rgba(150, 150, 150, 0.5), -2, -2, 5, 5),
             dropshadow(gaussian, rgba(150, 150, 150, 0.5), 2, -2, 5, 5),
             dropshadow(gaussian, rgba(150, 150, 150, 0.5), -2, 2, 5, 5);
+    -fx-font-size:30px;
     -fx-background-color: white;
     -fx-background-radius: 38px;
     -fx-border-color: #aaaaaa;
     -fx-border-width: 2px;
     -fx-border-radius: 35px;
-        -fx-translate-y: 0;
-        -fx-transition: all 0.5s;
+    -fx-translate-y: 0;
 }
 
-#anchorPaneMainTopic:hover {
-    -fx-transition: -fx-translate-y 0.5s ease-in-out;
-    -fx-translate-y: -13;
+.btnProceed{
+    -fx-effect: dropshadow(gaussian, rgba(198, 57, 62, 1), 2, 2, 3, 3),
+                dropshadow(gaussian, rgba(198, 57, 62, 1), -2, -2, 3, 3),
+                dropshadow(gaussian, rgba(198, 57, 62, 1), 2, -2, 3, 3),
+                dropshadow(gaussian, rgba(198, 57, 62, 1), -2, 2, 3, 3);
+        -fx-font-size:30px;
+        -fx-background-color: white;
+        -fx-background-radius: 38px;
+        -fx-border-color: #aaaaaa;
+        -fx-border-width: 2px;
+        -fx-border-radius: 35px;
+        -fx-translate-y: 0;
 }
+
+.btnProceed:hover{
+     -fx-scale-x: 1.1;
+         -fx-scale-y: 1.1;
+         -fx-transition: -fx-scale-x 1s, -fx-scale-y 1s;
+}
+

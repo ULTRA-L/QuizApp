@@ -7,4 +7,6 @@ module com.example.pdproject {
 
     opens com.example.pdproject to javafx.fxml;
     exports com.example.pdproject;
+    exports com.main.Game;
+    opens com.main.Game to javafx.fxml;
 }

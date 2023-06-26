@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Add SQL Connector jar">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MathTesting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/ChooseYourTopic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/englishTopic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/generalTopic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/mathTopic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/quizAppTitle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/TopicMenuView.fxml" afterDir="false" />
+    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/GeneralQuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/MainMenuViewControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/DifficultyMenuView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/NameEntryView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "D:/PrivateProperty/Coding/JAVA/PDProject/src/main/resources/com",
+    "last_directory_selection": "C:/Users/Jean/IdeaProjects/PD_Project/src/main/java/com/example/pdproject",
     "last_opened_file_path": "C:/Users/Jean/IdeaProjects/PD_Project/mysql-connector-j-8.0.33.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -83,7 +81,7 @@
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.pdproject.*" />
+          <option name="PATTERN" value="com.main.Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,7 +94,7 @@
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.pdproject.*" />
+          <option name="PATTERN" value="com.main.Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +107,7 @@
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.pdproject.*" />
+          <option name="PATTERN" value="com.main.Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,7 +120,7 @@
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.pdproject.*" />
+          <option name="PATTERN" value="com.main.Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687622837871</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing.">
+      <created>1687705367966</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687705367966</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing.">
+      <created>1687705415646</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687705415646</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,17 +224,7 @@
     <MESSAGE value="Add package, math game" />
     <MESSAGE value="Add SQL Connection, some practice files" />
     <MESSAGE value="Add SQL Connector jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add SQL Connector jar" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing." />
   </component>
 </project>

@@ -1,5 +1,6 @@
-package com.example.pdproject;
+package com.main.Game;
 
+import com.example.pdproject.UITesting;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -7,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class UITesting extends Application {
+public class MainMenuViewControl extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(UITesting.class.getResource("MainMenuView.fxml"));
