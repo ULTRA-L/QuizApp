@@ -31,16 +31,20 @@ public class SQLConnect{
         this.statement = connection.createStatement();
         //this.resultSet = statement.executeQuery("select * from " + sql); //english_quiz.easy (EX)
     }
-
-    public String[][] generateQuestion(int num_questions) throws SQLException {
+    public int getCount(int num_questions) throws SQLException {
         ResultSet count = statement.executeQuery("select count(*) from "+sql);
         count.next();
         int total_questions = count.getInt(1);
         count.close();
+        return total_questions;
+    }
+
+    public String[][] generateQuestion(int num_questions) throws SQLException {
+        int total_questions = getCount(num_questions);
 
         ResultSet resultSet = statement.executeQuery("select * from "+sql);
-        String res[][] = new String[total_questions][6];
-        String toDisplay[][] = new String[num_questions][6];
+        String[][] res = new String[total_questions][6];
+        String[][] toDisplay = new String[num_questions][6];
 
 
         int i = 0;
@@ -54,7 +58,7 @@ public class SQLConnect{
         Random rand = new Random();
         for (int j = 0; j < res.length; j++) {
             int randomIndexToSwap = rand.nextInt(res.length);
-            String temp[] = res[randomIndexToSwap];
+            String[] temp = res[randomIndexToSwap];
             res[randomIndexToSwap] = res[j];
             res[j] = temp;
         }

@@ -22,7 +22,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <ProgressBar id="progBar" fx:id="prog" layoutX="127.0" layoutY="21.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar id="progBar" fx:id="prog" layoutX="19.0" layoutY="22.0" prefWidth="200.0" progress="0.0" />
       <HBox alignment="CENTER" layoutX="19.0" layoutY="294.0" prefHeight="26.0" prefWidth="414.0">
          <children>
             <RadioButton id="btn_A" fx:id="btn_A" mnemonicParsing="false" text="RadioButton" />
@@ -34,5 +34,6 @@
             <RadioButton id="btn_C" fx:id="btn_C" mnemonicParsing="false" text="RadioButton" />
          </children>
       </HBox>
+      <Label id="time_label" fx:id="time_label" alignment="CENTER_RIGHT" layoutX="345.0" layoutY="23.0" prefHeight="18.0" prefWidth="88.0" text="Label" />
    </children>
 </AnchorPane>

@@ -22,12 +22,13 @@ public class ChoiceController {
     @FXML
     private ProgressBar prog;
     @FXML
-    private Label time;
+    private Label time_label;
     private int q_num = 1;
     private String[][] questions;
     private int num_of_questions = 10;
     private ToggleGroup toggleGroup;
     private int score = 0;
+    private double prog_per;
 
     @FXML
     protected void initialize() throws SQLException, ClassNotFoundException {
@@ -37,6 +38,9 @@ public class ChoiceController {
         btn_A.setToggleGroup(toggleGroup);
         btn_B.setToggleGroup(toggleGroup);
         btn_C.setToggleGroup(toggleGroup);
+
+        prog_per = (double) q_num/num_of_questions;
+        prog.setProgress(prog_per);
 
         questions = sql.generateQuestion(num_of_questions);
         System.out.println("Question ID: "+questions[0][0]);
@@ -78,6 +82,9 @@ public class ChoiceController {
         btn_B.setText(questions[q_num][3]);
         btn_C.setText(questions[q_num][4]);
         q_num++;
+        prog_per = (double) q_num/num_of_questions;
+        //System.out.println(q_num+ " / " + num_of_questions + " = "+ prog_per);
+        prog.setProgress(prog_per);
         question_number.setText("Question Number " + q_num);
         if(q_num == num_of_questions){
             next_btn.setText("END");
