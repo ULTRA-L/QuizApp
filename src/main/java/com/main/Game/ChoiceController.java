@@ -1,11 +1,12 @@
 package com.main.Game;
+import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.sql.SQLException;
 
-public class ChoiceController {
+public class ChoiceController{
 
     @FXML
     private Label question_label;
@@ -29,11 +30,26 @@ public class ChoiceController {
     private ToggleGroup toggleGroup;
     private int score = 0;
     private double prog_per;
+    //private TimeThread timeClass = new TimeThread(time_label);
+    //private boolean isRunning;
+    private TimeThread timeThread;
+
+    protected void startTimer(){
+        timeThread = new TimeThread();
+        ChangeListener<String> listener = (observableValue, s, t1) -> time_label.setText(s);
+        timeThread.valueProperty().addListener(listener);
+        new Thread(timeThread).start();
+    }
+    protected void stopTimer(){
+        timeThread.cancel();
+    }
+
 
     @FXML
     protected void initialize() throws SQLException, ClassNotFoundException {
         SQLConnect sql = new SQLConnect("jdbc:mysql://localhost:3306/general_quiz","easy");
 
+        //Thread timeThread = new Thread(timeClass);
         toggleGroup = new ToggleGroup();
         btn_A.setToggleGroup(toggleGroup);
         btn_B.setToggleGroup(toggleGroup);
@@ -50,6 +66,26 @@ public class ChoiceController {
         btn_A.setText(questions[0][2]);
         btn_B.setText(questions[0][3]);
         btn_C.setText(questions[0][4]);
+
+        startTimer();
+        time_label.textProperty().bind(timeThread.messageProperty());
+
+        //Thread timeThread = new Thread(()->{
+        //    long start,end,tim,sec,min;
+        //    isRunning = true;
+        //    start=System.currentTimeMillis();
+        //    while(isRunning) {
+        //        end = System.currentTimeMillis();
+        //        tim = (end - start) / 1000;
+        //        sec = tim % 60;
+        //        min = (tim / 60);
+        //        time_label.setText((int) min + ":" + (int) sec);
+        //    }
+        //});
+//
+        //timeThread.start();
+        //timeThread.join();
+
         //question_number.setText("test Question number");
         //question_label.setText("Test question label");
         //btn_A.setText("Choice A");
@@ -69,6 +105,8 @@ public class ChoiceController {
         }
 
         if(q_num >= num_of_questions){
+            timeThread.setIsRunning(false);
+            stopTimer();
             System.out.println("END. Score: "+score);
             Stage stage = (Stage) next_btn.getScene().getWindow();
             stage.close();
@@ -89,10 +127,5 @@ public class ChoiceController {
         if(q_num == num_of_questions){
             next_btn.setText("END");
         }
-
     }
-
-
-
-
 }

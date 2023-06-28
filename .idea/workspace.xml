@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" afterDir="false" />
+    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Timer works with correct expectations. Creates an exception however. Will fix if possible">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/SQLConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/SQLConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/ChoiceGameUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/ChoiceGameUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687705415646</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Progress bar under ChoiceController, new java file TimeThread w/o content">
+      <created>1687828627425</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687828627425</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -227,6 +232,18 @@
     <MESSAGE value="Add SQL Connection, some practice files" />
     <MESSAGE value="Add SQL Connector jar" />
     <MESSAGE value="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing." />
+    <MESSAGE value="Added Progress bar under ChoiceController, new java file TimeThread w/o content" />
+    <MESSAGE value="Timer works with correct expectations. Creates an exception however. Will fix if possible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Timer works with correct expectations. Creates an exception however. Will fix if possible" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
