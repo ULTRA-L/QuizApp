@@ -112,3 +112,61 @@
          -fx-transition: -fx-scale-x 1s, -fx-scale-y 1s;
 }
 
+.toggleChoiceGroup {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 0 0 2 0;
+    -fx-border-color: #555555;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-text-fill: black;
+}
+
+.toggleChoiceGroup:selected {
+    -fx-transition: 1s;
+    -fx-background-color: #bbbbbb;
+    -fx-text-fill: white;
+}
+
+.questionLabel {
+    -fx-font-family: "Impact", "Charcoal", sans-serif;
+    -fx-font-size: 50px;
+    -fx-letter-spacing: 0.8px;
+    -fx-word-spacing: 2.2px;
+    -fx-text-fill: #7C91FE;
+    -fx-font-weight: normal;
+    -fx-text-decoration: none;
+    -fx-font-style: normal;
+    -fx-font-variant: normal;
+    -fx-text-transform: uppercase;
+    -fx-effect: dropshadow(gaussian, #666666, 1, 1, 1, 1);
+}
+
+.titleLabel {
+    -fx-font-family: "Impact", "Charcoal", sans-serif;
+    -fx-font-size: 50px;
+    -fx-letter-spacing: 0.8px;
+    -fx-font-weight: normal;
+    -fx-text-decoration: none;
+    -fx-font-style: normal;
+    -fx-font-variant: normal;
+    -fx-text-transform: uppercase;
+    -fx-effect: dropshadow(gaussian, #666666, 1, 1, 1, 1);
+}
+
+#nextQuestionButton {
+    -fx-font-family: "Impact", "Charcoal", sans-serif;
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, 2, 5, 5),
+                 dropshadow(gaussian, rgba(0, 0, 0, 0.5), -2, -2, 5, 5),
+                 dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, -2, 5, 5),
+                 dropshadow(gaussian, rgba(0, 0, 0, 0.5), -2, 2, 5, 5);
+                 -fx-transition: -fx-background-color 0.5s;
+     -fx-background-radius: 20px;
+     -fx-text-fill: white;
+     -fx-font-style: normal;
+     -fx-font-size: 30px;
+}
+
+#nextQuestionButton:hover {
+    -fx-background-color: #333333;
+}

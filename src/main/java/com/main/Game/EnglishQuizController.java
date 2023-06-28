@@ -13,11 +13,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class GeneralQuizController extends Application {
+public class EnglishQuizController extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FadeTransition fadeTransition;
-        FXMLLoader fxmlLoader = new FXMLLoader(UITesting.class.getResource("GeneralQuizView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(UITesting.class.getResource("EnglishQuizView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
 
         ToggleButton btnChoice1 = new ToggleButton("Button 1");
