@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Made english and General UI and controllers (not finished) just so u could use them na. :)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/MainViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/SceneSwitch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/TopicMenuController.java" afterDir="false" />
+    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/UITesting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/EnglishQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/EnglishQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/GeneralQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/GeneralQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MainMenuViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MainLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/DifficultyMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/DifficultyMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/TopicMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/TopicMenuView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/EnglishQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/EnglishQuizView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +70,21 @@
       <recent name="C:\Users\Jean\IdeaProjects\PD_Project\src\main\resources\com\example" />
       <recent name="D:\PrivateProperty\Coding\JAVA\PDProject" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.example.pdproject" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.MainLauncher">
+  <component name="RunManager" selected="Application.ChoiceGame">
+    <configuration name="ChoiceGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.Game.ChoiceGame" />
+      <module name="PDProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.main.Game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GeneralQuizController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.main.Game.GeneralQuizController" />
       <module name="PDProject" />
@@ -108,8 +111,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.MainLauncher" />
+    <configuration name="MathTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.MathTesting" />
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
@@ -121,21 +124,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainMenuViewControl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.Game.MainMenuViewControl" />
-      <module name="PDProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.main.Game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TopicMenuController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.Game.TopicMenuController" />
+    <configuration name="UITesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.UITesting" />
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
@@ -162,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainLauncher" />
-        <item itemvalue="Application.TopicMenuController" />
-        <item itemvalue="Application.MainMenuViewControl" />
+        <item itemvalue="Application.ChoiceGame" />
         <item itemvalue="Application.GeneralQuizController" />
+        <item itemvalue="Application.UITesting" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.MathTesting" />
       </list>
     </recent_temporary>
   </component>
@@ -228,14 +218,7 @@
       <option name="project" value="LOCAL" />
       <updated>1687705415646</updated>
     </task>
-    <task id="LOCAL-00008" summary="Made english and General UI and controllers (not finished) just so u could use them na. :)">
-      <created>1687951676881</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1687951676881</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -244,7 +227,6 @@
     <MESSAGE value="Add SQL Connection, some practice files" />
     <MESSAGE value="Add SQL Connector jar" />
     <MESSAGE value="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing." />
-    <MESSAGE value="Made english and General UI and controllers (not finished) just so u could use them na. :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made english and General UI and controllers (not finished) just so u could use them na. :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing." />
   </component>
 </project>

@@ -4,6 +4,7 @@ import javafx.concurrent.Task;
 
 public class TimeThread extends Task<String> {
     private long start, end, tim, min, sec;
+    private String result;
     private boolean isRunning;
     public TimeThread(){
         this.isRunning = true;
@@ -11,6 +12,9 @@ public class TimeThread extends Task<String> {
 
     public void setIsRunning(boolean isRunning){
         this.isRunning = isRunning;
+    }
+    public String getResult(){
+        return this.result;
     }
     public long[] getProperTime(){
         long[] result = new long[3];
@@ -43,8 +47,7 @@ public class TimeThread extends Task<String> {
     //}
 
     @Override
-    protected String call() throws Exception {
-        String result = new String();
+    protected String call() {
         start=System.currentTimeMillis();
         while(isRunning) {
             end = System.currentTimeMillis();
@@ -52,7 +55,7 @@ public class TimeThread extends Task<String> {
             sec = tim % 60;
             min = (tim / 60);
             result = String.format("%02d", min) + ":" + String.format("%02d", sec);
-            System.out.println(result);
+            //System.out.println(result);
             updateMessage(result);
         }
         return result;
