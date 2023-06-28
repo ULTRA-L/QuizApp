@@ -1,6 +1,6 @@
 package com.main.Game;
 
-import com.example.pdproject.UITesting;
+import com.example.pdproject.MainLauncher;
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +17,7 @@ public class GeneralQuizController extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FadeTransition fadeTransition;
-        FXMLLoader fxmlLoader = new FXMLLoader(UITesting.class.getResource("GeneralQuizView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainLauncher.class.getResource("GeneralQuizView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
 
         ToggleButton btnChoice1 = new ToggleButton("Button 1");

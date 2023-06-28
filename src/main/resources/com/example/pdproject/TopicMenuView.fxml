@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #3ceffe;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pdproject.UITesting">
+<AnchorPane fx:id="topicViewAnchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #3ceffe;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Game.TopicMenuController">
    <children>
       <Pane id="anchorPaneMain" layoutX="204.0" layoutY="49.0" prefHeight="157.0" prefWidth="872.0" stylesheets="@Styles.css">
          <children>

@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: be91ee;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pdproject.UITesting">
+<AnchorPane fx:id="mainViewAnchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: be91ee;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Game.MainViewController">
    <children>
       <AnchorPane layoutX="88.0" layoutY="57.0" prefHeight="607.0" prefWidth="1105.0" style="-fx-background-color: ffffff; -fx-background-radius: 35; -fx-border-color: a465e7; -fx-border-radius: 33;" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="87.0" AnchorPane.topAnchor="57.0">
          <children>
@@ -14,7 +14,7 @@
                <image>
                   <Image url="@../Images/quizAppTitle.png" />
                </image></ImageView>
-            <Button id="btnStart" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="230.0" lineSpacing="3.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: #f66fb3; -fx-text-fill: white;" stylesheets="@Styles.css" text="PLAY" textAlignment="CENTER">
+            <Button id="btnStart" fx:id="btnStart" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="230.0" lineSpacing="3.0" mnemonicParsing="false" onAction="#loadNextScene" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: #f66fb3; -fx-text-fill: white;" stylesheets="@Styles.css" text="PLAY" textAlignment="CENTER">
                <font>
                   <Font name="HARMONY" size="41.0" />
                </font>

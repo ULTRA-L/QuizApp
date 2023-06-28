@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: f96b70; -fx-background-size: 30;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pdproject.UITesting">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: f96b70; -fx-background-size: 30;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pdproject.MainLauncher">
    <children>
       <AnchorPane layoutX="75.0" layoutY="72.0" prefHeight="576.0" prefWidth="507.0" styleClass="anchorPaneMainTopic">
          <children>

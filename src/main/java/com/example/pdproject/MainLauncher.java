@@ -1,6 +1,5 @@
-package com.main.Game;
+package com.example.pdproject;
 
-import com.example.pdproject.UITesting;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -8,14 +7,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MainMenuViewControl extends Application {
+public class MainLauncher extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(UITesting.class.getResource("MainMenuView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainLauncher.class.getResource("MainMenuView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
-        stage.setTitle("Test!");
+        stage.setTitle("Quiz Up! - Application");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {
