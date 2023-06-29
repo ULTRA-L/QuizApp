@@ -197,4 +197,5 @@
 #clickTopic:hover{
     -fx-background-color: linear-gradient(#eeeeee, #ffffff);
     -fx-text-fill:white;
-    -fx-font-weight:bold;}
+    -fx-font-weight:bold;
+    }
