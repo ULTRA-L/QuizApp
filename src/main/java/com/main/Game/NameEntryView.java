@@ -1,24 +1,29 @@
 package com.main.Game;
 
-import com.example.pdproject.MainLauncher;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-public class NameEntryView extends Application {
-    @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainLauncher.class.getResource("NameEntryView.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
-        stage.setTitle("Test!");
-        stage.setScene(scene);
-        stage.show();
+public class NameEntryView {
+
+    @FXML
+    private Button btnProceedName;
+
+    @FXML
+    private AnchorPane nameEntryAnchor;
+
+    @FXML
+    private TextField nameEntryText;
+
+    @FXML
+    void onLoadScene(ActionEvent event) throws IOException {
+        String saveName = nameEntryText.getText();
+
+        new SceneSwitch(nameEntryAnchor, "TopicMenuView.fxml");
     }
 
-    public static void main(String[] args) {
-        launch();
-    }
 }

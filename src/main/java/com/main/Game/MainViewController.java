@@ -17,7 +17,7 @@ public class MainViewController {
 
     @FXML
     void loadNextScene(ActionEvent event) throws IOException {
-        new SceneSwitch(mainViewAnchor, "TopicMenuView.fxml");
+        new SceneSwitch(mainViewAnchor, "NameEntryView.fxml");
     }
 
 }

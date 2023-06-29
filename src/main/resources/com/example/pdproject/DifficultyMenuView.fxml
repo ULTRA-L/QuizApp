@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: f96b70; -fx-background-size: 30;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pdproject.MainLauncher">
+<AnchorPane fx:id="difficultyMenuAnchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: f96b70; -fx-background-size: 30;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Game.DifficultyMenuController">
    <children>
       <AnchorPane layoutX="75.0" layoutY="72.0" prefHeight="576.0" prefWidth="507.0" styleClass="anchorPaneMainTopic">
          <children>
@@ -34,7 +34,7 @@
                </font>
             </Label>
          </children></AnchorPane>
-      <Button layoutX="634.0" layoutY="360.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="EASY">
+      <Button id="difficultyButtonsStyle" fx:id="btnEasyChoice" layoutX="634.0" layoutY="360.0" mnemonicParsing="false" onAction="#chooseEasy" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="EASY">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
@@ -49,7 +49,7 @@
             </Lighting>
          </effect>
       </Button>
-      <Button layoutX="634.0" layoutY="450.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="MEDIUM">
+      <Button fx:id="btnMediumChoice" layoutX="634.0" layoutY="450.0" mnemonicParsing="false" onAction="#chooseMedium" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="MEDIUM">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
@@ -57,7 +57,7 @@
             <Cursor fx:constant="NONE" />
          </cursor>
       </Button>
-      <Button layoutX="634.0" layoutY="541.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="HARD">
+      <Button fx:id="btnHardChoice" layoutX="634.0" layoutY="541.0" mnemonicParsing="false" onAction="#chooseHard" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="HARD">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>

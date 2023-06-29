@@ -63,7 +63,9 @@
 }
 
 .difficultyButtonsStyle:hover {
-    -fx-translate-y: -13;
+        -fx-scale-x: 1.1;
+        -fx-scale-y: 1.1;
+        -fx-transition: -fx-scale-x 1s, -fx-scale-y 1s;
 }
 
 .anchorPaneMainTopic{
@@ -90,26 +92,6 @@
     -fx-border-width: 2px;
     -fx-border-radius: 35px;
     -fx-translate-y: 0;
-}
-
-.btnProceed{
-    -fx-effect: dropshadow(gaussian, rgba(198, 57, 62, 1), 2, 2, 3, 3),
-                dropshadow(gaussian, rgba(198, 57, 62, 1), -2, -2, 3, 3),
-                dropshadow(gaussian, rgba(198, 57, 62, 1), 2, -2, 3, 3),
-                dropshadow(gaussian, rgba(198, 57, 62, 1), -2, 2, 3, 3);
-        -fx-font-size:30px;
-        -fx-background-color: white;
-        -fx-background-radius: 38px;
-        -fx-border-color: #aaaaaa;
-        -fx-border-width: 2px;
-        -fx-border-radius: 35px;
-        -fx-translate-y: 0;
-}
-
-.btnProceed:hover{
-     -fx-scale-x: 1.1;
-         -fx-scale-y: 1.1;
-         -fx-transition: -fx-scale-x 1s, -fx-scale-y 1s;
 }
 
 .toggleChoiceGroup {
@@ -170,3 +152,49 @@
 #nextQuestionButton:hover {
     -fx-background-color: #333333;
 }
+
+#btnProceedName {
+    -fx-font-family: "Impact", "Charcoal", sans-serif;
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0,0 0 6 0,0 0 7 0;
+    -fx-background-radius: 20;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%,#a34313 0%,#903b12 100%),
+            #9d4024,
+            #d86e3a,
+            radial-gradient(center 50% 50%, radius 100%,#FB6C71,#FF5757);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75),4,0,0,1);
+    -fx-font-weight: bold;
+    -fx-font-size: 45px;
+    -fx-text-fill: white;
+}
+#btnProceedName:hover {
+
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%,#a34313 0%,#903b12 100),
+            #9d4024,
+            #FF5757,
+            radial-gradient(center 50% 50%,radius 100%,#F89FA1,#FB6C71);
+}
+
+#btnProceedName:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+}
+
+#clickTopic{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#clickTopic:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+}
+
+#clickTopic:hover{
+    -fx-background-color: linear-gradient(#eeeeee, #ffffff);
+    -fx-text-fill:white;
+    -fx-font-weight:bold;}
