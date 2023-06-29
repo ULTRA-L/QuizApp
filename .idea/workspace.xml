@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Made english and General UI and controllers (not finished) just so u could use them na. :)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/DifficultyMenuController.java" afterDir="false" />
+    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/MainViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/TopicMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/TopicMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/DifficultyMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/DifficultyMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/NameEntryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/NameEntryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/TopicMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/TopicMenuView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687951676881</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned.">
+      <created>1688036947464</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688036947464</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned.">
+      <created>1688037002725</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688037002725</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -241,6 +247,8 @@
     <MESSAGE value="Add SQL Connector jar" />
     <MESSAGE value="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing." />
     <MESSAGE value="Made english and General UI and controllers (not finished) just so u could use them na. :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made english and General UI and controllers (not finished) just so u could use them na. :)" />
+    <MESSAGE value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned." />
+    <MESSAGE value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned. Yes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned. Yes" />
   </component>
 </project>
