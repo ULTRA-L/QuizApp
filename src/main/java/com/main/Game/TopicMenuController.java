@@ -23,17 +23,17 @@ public class TopicMenuController {
 
     @FXML
     void onChooseEnglish(ActionEvent event) throws IOException {
-        new SceneSwitch(topicViewAnchor, "DifficultyMenuView.fxml");
+        new SceneSwitch(topicViewAnchor, "DifficultyMenuView.fxml", "jdbc:mysql://localhost:3306/english_quiz");
     }
 
     @FXML
     void onChooseGeneral(ActionEvent event) throws IOException {
-        new SceneSwitch(topicViewAnchor, "DifficultyMenuView.fxml");
+        new SceneSwitch(topicViewAnchor, "DifficultyMenuView.fxml", "jdbc:mysql://localhost:3306/general_quiz");
     }
 
     @FXML
     void onChooseMath(ActionEvent event) throws IOException {
-        new SceneSwitch(topicViewAnchor, "DifficultyMenuView.fxml");
+        new SceneSwitch(topicViewAnchor, "DifficultyMenuView.fxml", "jdbc:mysql://localhost:3306/math_quiz");
     }
 
 }

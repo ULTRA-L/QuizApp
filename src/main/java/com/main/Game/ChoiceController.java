@@ -56,7 +56,11 @@ public class ChoiceController{
 
     @FXML
     protected void initialize() throws SQLException, ClassNotFoundException {
-        SQLConnect sql = new SQLConnect("jdbc:mysql://localhost:3306/general_quiz","easy");
+
+        SceneSwitch sceneInfo = new SceneSwitch();
+        System.out.println(sceneInfo.getTopic()+" | "+sceneInfo.getDifficulty());
+        SQLConnect sql = new SQLConnect(sceneInfo.getTopic(),sceneInfo.getDifficulty());
+        //SQLConnect sql = new SQLConnect("jdbc:mysql://localhost:3306/general_quiz","easy");
 
         //Thread timeThread = new Thread(timeClass);
         toggleGroup = new ToggleGroup();
