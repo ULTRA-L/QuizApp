@@ -1,0 +1,52 @@
+.AnchorPaneMain{
+    -fx-background-color: white;
+    -fx-background-radius: 37px;
+    -fx-border-color: #4C5BA8;
+    -fx-border-width: 3px;
+    -fx-border-radius: 35px;
+    -fx-effect: dropshadow(gaussian, #4C5BA8, 2, 0.5, 0, 0);
+}
+
+.titleLabel {
+    -fx-font-family: "Impact", "Charcoal", sans-serif;
+    -fx-font-size: 50px;
+    -fx-font-weight: normal;
+    -fx-text-decoration: none;
+    -fx-font-style: normal;
+    -fx-font-variant: normal;
+    -fx-text-transform: uppercase;
+    -fx-effect: dropshadow(gaussian, #666666, 1, 1, 1, 1);
+    -fx-text-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 2px;
+}
+
+.text-style {
+    -fx-font-family: "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #444444;
+}
+
+#buttonProceed {
+    -fx-font-family: "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 40px;
+    -fx-text-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 2px;
+    -fx-font-weight: bold;
+
+    -fx-background-color: #FF7799;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 25px;
+    -fx-background-insets: 3 3 3 3;
+    -fx-border-radius: 25px;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 4, 4);
+    -fx-transition: -fx-transform 0.3s;
+}
+
+#buttonProceed:hover {
+    -fx-transform: scale(2);
+}
