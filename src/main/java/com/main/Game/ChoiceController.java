@@ -2,9 +2,10 @@ package com.main.Game;
 import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 public class ChoiceController{
@@ -27,16 +28,22 @@ public class ChoiceController{
     private Label time_label;
     @FXML
     private Label score_count;
+    @FXML
+    private AnchorPane topicQuizAnchor;
+    private SQLConnect sql;
     private int q_num = 1;
     private String[][] questions;
     private final int num_of_questions = 10;
     private ToggleGroup toggleGroup;
+    private int mark;
+    private int timeTemp;
     private int score;
     private double prog_per;
     //private TimeThread timeClass = new TimeThread(time_label);
     //private boolean isRunning;
     private TimeThread timeThread;
     private Thread timeThreading;
+
 
     protected void startTimer(){
         timeThread = new TimeThread();
@@ -46,7 +53,9 @@ public class ChoiceController{
         timeThreading.start();
         time_label.textProperty().bind(timeThread.messageProperty());
     }
-    protected void stopTimer() throws InterruptedException {
+    protected void stopTimer() throws InterruptedException, SQLException {
+        SceneSwitch data = new SceneSwitch();
+        sql.saveScore(data.getName(), mark, timeThread.getTime(),score);
         timeThread.setIsRunning(false);
         time_label.textProperty().unbind();
         timeThreading.join();
@@ -59,7 +68,7 @@ public class ChoiceController{
 
         SceneSwitch sceneInfo = new SceneSwitch();
         System.out.println(sceneInfo.getTopic()+" | "+sceneInfo.getDifficulty());
-        SQLConnect sql = new SQLConnect(sceneInfo.getTopic(),sceneInfo.getDifficulty());
+        sql = new SQLConnect(sceneInfo.getTopic(),sceneInfo.getDifficulty());
         //SQLConnect sql = new SQLConnect("jdbc:mysql://localhost:3306/general_quiz","easy");
 
         //Thread timeThread = new Thread(timeClass);
@@ -68,6 +77,8 @@ public class ChoiceController{
         btn_B.setToggleGroup(toggleGroup);
         btn_C.setToggleGroup(toggleGroup);
 
+        mark = 0;
+        timeTemp = 0;
         score = 0;
 
         //HBox hBox = new HBox();
@@ -114,18 +125,26 @@ public class ChoiceController{
         //btn_C.setText("Choice C");
     }
     @FXML
-    protected void onNextButtonClick() throws InterruptedException {
+    protected void onNextButtonClick() throws InterruptedException, SQLException, IOException {
         if(toggleGroup.getSelectedToggle() == null){
             System.out.println("Unselect");
             return;
         }
         System.out.println(((ToggleButton)toggleGroup.getSelectedToggle()).getText() + " | "+questions[q_num-1][5]);
         if((((ToggleButton)toggleGroup.getSelectedToggle()).getText()).equals(questions[q_num-1][5])){
-            score++;
-            score_count.setText(String.valueOf(score));
-            if(score > 0 && score < 6){
+            mark++;
+            int timeGap = timeThread.getTime() - timeTemp;
+            if(timeGap <= 10){
+                score+= (mark * 100)*3;
+            }else if (timeGap <= 30){
+                score+= (mark * 100)*2;
+            }else{
+                score+= (mark * 100);
+            }
+            score_count.setText(String.valueOf(mark));
+            if(mark > 0 && mark < 6){
                 score_count.setTextFill(Color.rgb(255,127,0));
-            } else if (score >=6) {
+            } else if (mark >=6) {
                 score_count.setTextFill(Color.rgb(50,205,5));
             }
 
@@ -134,13 +153,17 @@ public class ChoiceController{
 
         if(q_num >= num_of_questions){
             stopTimer();
-            System.out.println("END. Score: "+score);
-            question_label.setText("FINISH! Your score: " + score);
+            System.out.println("END. Score: "+ mark);
+            question_label.setText("FINISH! Your score: " + mark);
+
+            new SceneSwitch(topicQuizAnchor, "ResultsView.fxml");
             //time_label.setText(timeThread.getResult());
-            Stage stage = (Stage) next_btn.getScene().getWindow();
-            stage.close();
+            //Stage stage = (Stage) next_btn.getScene().getWindow();
+            //stage.close();
             return;
         }
+
+
 
         toggleGroup.getSelectedToggle().setSelected(false);
         System.out.println("Question ID: "+questions[q_num][0]);

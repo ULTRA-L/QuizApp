@@ -23,7 +23,7 @@ public class NameEntryView {
     void onLoadScene(ActionEvent event) throws IOException {
         String saveName = nameEntryText.getText();
 
-        new SceneSwitch(nameEntryAnchor, "TopicMenuView.fxml");
+        new SceneSwitch(saveName ,"TopicMenuView.fxml",nameEntryAnchor);
     }
 
 }

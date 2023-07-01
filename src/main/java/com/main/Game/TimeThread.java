@@ -16,13 +16,8 @@ public class TimeThread extends Task<String> {
     public String getResult(){
         return this.result;
     }
-    public long[] getProperTime(){
-        long[] result = new long[3];
-        result[0] = tim;
-        result[1] = sec;
-        result[2] = min;
-
-        return result;
+    public int getTime(){
+        return (int) this.tim;
     }
 
     //public void run() {

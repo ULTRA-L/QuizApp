@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -23,6 +25,11 @@
                   <Font name="HARMONY" size="41.0" />
                </font>
             </Button>
+            <ImageView fx:id="title" fitHeight="297.0" fitWidth="703.0" layoutX="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/quizAppTitle.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

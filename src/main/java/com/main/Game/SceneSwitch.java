@@ -9,17 +9,22 @@ import java.util.Objects;
 public class SceneSwitch {
     private static String topic;
     private static String difficulty;
+    private static String name;
     public SceneSwitch(AnchorPane currentAnchorPane, String fxml) throws IOException {
         AnchorPane nextAnchorPane = FXMLLoader.load(Objects.requireNonNull(MainLauncher.class.getResource(fxml)));
         currentAnchorPane.getChildren().removeAll();
         currentAnchorPane.getChildren().setAll(nextAnchorPane);
     }
-    public SceneSwitch(AnchorPane currentAnchorPane, String fxml, String topic) throws IOException{
-        this.topic = topic;
+    public SceneSwitch(String name, String fxml, AnchorPane currentAnchorPane) throws IOException { //Set Name
+        SceneSwitch.name = name;
+        new SceneSwitch(currentAnchorPane,fxml);
+    }
+    public SceneSwitch(AnchorPane currentAnchorPane, String fxml, String topic) throws IOException{ //Set Topic
+        SceneSwitch.topic = topic;
         new SceneSwitch(currentAnchorPane, fxml);
     }
-    public SceneSwitch(String difficulty, AnchorPane currentAnchorPane, String fxml) throws IOException{
-        this.difficulty = difficulty;
+    public SceneSwitch(String difficulty, AnchorPane currentAnchorPane, String fxml) throws IOException{ //Set Difficulty
+        SceneSwitch.difficulty = difficulty;
         new SceneSwitch(currentAnchorPane, fxml);
     }
     public SceneSwitch(){}
@@ -30,5 +35,8 @@ public class SceneSwitch {
 
     public String getDifficulty() {
         return difficulty;
+    }
+    public String getName(){
+        return name;
     }
 }

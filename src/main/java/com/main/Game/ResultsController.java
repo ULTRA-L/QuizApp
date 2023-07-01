@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class ResultsController {
 
@@ -37,8 +38,16 @@ public class ResultsController {
         new SceneSwitch(resultsPageAnchor, "highScoreView.fxml");
     }
 
-    public void initialize() {
-        int score = Integer.parseInt(scoreResults.getText());
+    public void initialize() throws SQLException, ClassNotFoundException {
+        SceneSwitch data = new SceneSwitch();
+        SQLConnect sql = new SQLConnect(data.getTopic(), data.getDifficulty());
+        String[] result = sql.getLatestScore();
+
+        timeResult.setText(timeConvert(Integer.parseInt(result[3])));
+        marksResult.setText(result[2]+"/10");
+        scoreResults.setText(result[4]);
+
+        int score = Integer.parseInt(result[2]);
         if (score < 3) {
             resultQuote.setText("Try Better Next Time");
         } else if (score >= 3 && score <= 6) {
@@ -48,5 +57,12 @@ public class ResultsController {
         } else if (score == 10) {
             resultQuote.setText("You got perfect!");
         }
+    }
+
+    private String timeConvert(int time){
+        int sec = time % 60;
+        int min = (time / 60);
+        String result = String.format("%02d", min) + ":" + String.format("%02d", sec);
+        return result;
     }
 }
