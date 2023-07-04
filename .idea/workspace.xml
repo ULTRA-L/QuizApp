@@ -6,22 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Normal Flow attained.&#10;Added Backend for the following:&#10;- ResultsController&#10;- HighScoreController&#10;Fixed Image in MainMenuView.fxml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MainLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MainLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/DifficultyMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/DifficultyMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/HighScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/HighScoreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/MainViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ResultsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ResultsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/SQLConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/SQLConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/SceneSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/SceneSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/TopicMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/TopicMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/EnglishQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/EnglishQuizView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MathQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MathQuizView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/highScoreView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/highScoreView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688053012369</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Normal Flow attained.&#10;Added Backend for the following:&#10;- ResultsController&#10;- HighScoreController&#10;Fixed Image in MainMenuView.fxml">
+      <created>1688214591044</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688214591044</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

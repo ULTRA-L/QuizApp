@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -14,12 +15,19 @@ public class MainViewController {
 
     @FXML
     private Button btnStart;
+    @FXML
+    private Button btnExit;
 
     @FXML
     private AnchorPane mainViewAnchor;
     @FXML
     private ImageView title;
 
+    @FXML
+    void onExitPress(){
+        Stage stage = (Stage) btnExit.getScene().getWindow();
+        stage.close();
+    }
     @FXML
     void loadNextScene(ActionEvent event) throws IOException {
         new SceneSwitch(mainViewAnchor, "NameEntryView.fxml");

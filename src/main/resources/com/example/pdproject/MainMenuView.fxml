@@ -15,7 +15,7 @@
                   <Font name="HARMONY" size="41.0" />
                </font>
             </Button>
-            <Button id="btnExit" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="458.0" lineSpacing="3.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: a465e7; -fx-text-fill: white;" stylesheets="@Styles.css" text="EXIT" textAlignment="CENTER">
+            <Button id="btnExit" fx:id="btnExit" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="458.0" lineSpacing="3.0" mnemonicParsing="false" onAction="#onExitPress" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: a465e7; -fx-text-fill: white;" stylesheets="@Styles.css" text="EXIT" textAlignment="CENTER">
                <font>
                   <Font name="HARMONY" size="41.0" />
                </font>
