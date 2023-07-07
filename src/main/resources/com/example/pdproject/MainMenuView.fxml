@@ -20,7 +20,7 @@
                   <Font name="HARMONY" size="41.0" />
                </font>
             </Button>
-            <Button id="btnAbout" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="330.0" lineSpacing="3.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: #f66fb3; -fx-text-fill: white;" stylesheets="@Styles.css" text="ABOUT" textAlignment="CENTER">
+            <Button id="btnAbout" fx:id="btnAbout" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="330.0" lineSpacing="3.0" mnemonicParsing="false" onAction="#onToAbout" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: #f66fb3; -fx-text-fill: white;" stylesheets="@Styles.css" text="ABOUT" textAlignment="CENTER">
                <font>
                   <Font name="HARMONY" size="41.0" />
                </font>

@@ -101,11 +101,13 @@
     -fx-border-color: #555555;
     -fx-border-width: 3px;
     -fx-border-radius: 10px;
+    -fx-font-size: 20px;
     -fx-text-fill: black;
 }
 
 .toggleChoiceGroup:selected {
     -fx-transition: 1s;
+    -fx-font-size: 23px;
     -fx-background-color: #bbbbbb;
     -fx-text-fill: white;
 }

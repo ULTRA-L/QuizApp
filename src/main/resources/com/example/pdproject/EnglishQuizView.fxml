@@ -6,12 +6,19 @@
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="topicQuizAnchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FFA7E4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Game.ChoiceController">
     <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../Images/englishBackground.png" />
+         </image>
+      </ImageView>
         <AnchorPane id="anchorPaneMainTopic" layoutX="80.0" layoutY="99.0" prefHeight="183.0" prefWidth="1120.0" stylesheets="@Styles.css">
             <children>
                 <Label layoutX="450.0" layoutY="14.0" styleClass="questionLabel" text="Question" />
@@ -30,7 +37,7 @@
                         <ToggleGroup fx:id="toggleChoiceGroup" />
                     </toggleGroup>
                     <graphic>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="56.0" style="-fx-background-color: #7C91FE; -fx-border-color: #555555; -fx-border-width: 3; -fx-border-radius: 5 0 0 5;" text="a.">
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="56.0" style="-fx-background-color: #7C91FE; -fx-border-color: #555555; -fx-border-width: 3; -fx-border-radius: 5 0 0 5; -fx-background-radius: 10 0 0 10;" text="a.">
                             <font>
                                 <Font name="System Bold" size="30.0" />
                             </font>
@@ -45,7 +52,7 @@
                 </ToggleButton>
                 <ToggleButton id="btnChoice2" fx:id="btn_B" alignment="CENTER_LEFT" layoutX="-37.0" layoutY="66.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="380.0" styleClass="toggleChoiceGroup" stylesheets="@Styles.css" text="ToggleButton" toggleGroup="$toggleChoiceGroup">
                     <graphic>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="56.0" style="-fx-background-color: #7C91FE; -fx-border-color: #555555; -fx-border-width: 3; -fx-border-radius: 5 0 0 5;" text="b.">
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="56.0" style="-fx-background-color: #7C91FE; -fx-border-color: #555555; -fx-border-width: 3; -fx-border-radius: 5 0 0 5; -fx-background-radius: 10 0 0 10;" text="b.">
                             <font>
                                 <Font name="System Bold" size="30.0" />
                             </font>
@@ -60,7 +67,7 @@
                 </ToggleButton>
                 <ToggleButton id="btnChoice3" fx:id="btn_C" alignment="CENTER_LEFT" layoutX="-37.0" layoutY="138.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="380.0" styleClass="toggleChoiceGroup" stylesheets="@Styles.css" text="ToggleButton" toggleGroup="$toggleChoiceGroup">
                     <graphic>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="56.0" style="-fx-background-color: #7C91FE; -fx-border-color: #555555; -fx-border-width: 3; -fx-border-radius: 5 0 0 5;" text="c.">
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="56.0" style="-fx-background-color: #7C91FE; -fx-border-color: #555555; -fx-border-width: 3; -fx-border-radius: 5 0 0 5; -fx-background-radius: 10 0 0 10;" text="c.">
                             <font>
                                 <Font name="System Bold" size="30.0" />
                             </font>

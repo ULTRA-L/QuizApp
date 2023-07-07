@@ -44,7 +44,9 @@ public class ResultsController {
         String[] result = sql.getLatestScore();
 
         timeResult.setText(timeConvert(Integer.parseInt(result[3])));
+
         marksResult.setText(result[2]+"/10");
+
         scoreResults.setText(result[4]);
 
         int score = Integer.parseInt(result[2]);

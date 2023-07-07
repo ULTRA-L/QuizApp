@@ -19,6 +19,9 @@ public class MainViewController {
     private Button btnExit;
 
     @FXML
+    private Button btnAbout;
+
+    @FXML
     private AnchorPane mainViewAnchor;
     @FXML
     private ImageView title;
@@ -32,6 +35,12 @@ public class MainViewController {
     void loadNextScene(ActionEvent event) throws IOException {
         new SceneSwitch(mainViewAnchor, "NameEntryView.fxml");
     }
+
+    @FXML
+    void onToAbout(ActionEvent event) throws IOException {
+        new SceneSwitch(mainViewAnchor, "AboutUsView.fxml");
+    }
+
     @FXML
     protected void initialize(){
         title.setFitWidth(700);
