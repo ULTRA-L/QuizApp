@@ -4,31 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/AboutUsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/englishBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/generalBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/mathBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/pinkBackgroundAbout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/tonidoImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/vendiolaImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/white question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/yellowBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/AboutUsView.fxml" afterDir="false" />
+    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Added catch methods for SQL and Name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MainLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MainLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/MainViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ResultsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ResultsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/EnglishQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/EnglishQuizView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MathQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MathQuizView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/NameEntryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/NameEntryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/NameEntryView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/SQLConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/SQLConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,7 +48,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Jean/IdeaProjects/PD_Project/src/main/java/com/example/pdproject&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jean/IdeaProjects/PD_Project/mysql-connector-j-8.0.33.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PrivateProperty/Coding/JAVA/PD_Project/mysql-connector-j-8.0.33.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -85,21 +65,43 @@
       <recent name="D:\PrivateProperty\Coding\JAVA\PDProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jean\IdeaProjects\PD_Project\src\main\resources\com\example\Images" />
       <recent name="C:\Users\Jean\IdeaProjects\PD_Project\src\main\resources\com\example" />
       <recent name="D:\PrivateProperty\Coding\JAVA\PDProject" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.example.pdproject" />
-    </key>
   </component>
   <component name="RunManager" selected="Application.MainLauncher">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ChoiceGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.main.Game.ChoiceGame" />
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.*" />
+          <option name="PATTERN" value="com.main.Game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneralQuizController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.Game.GeneralQuizController" />
+      <module name="PDProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.main.Game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.HelloApplication" />
+      <module name="PDProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.main.Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,7 +114,7 @@
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.main.Game.*" />
+          <option name="PATTERN" value="com.example.pdproject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,34 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainMenuViewControl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.Game.MainMenuViewControl" />
-      <module name="PDProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.main.Game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResultsController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.Game.ResultsController" />
-      <module name="PDProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.main.Game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TopicMenuController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.Game.TopicMenuController" />
+    <configuration name="UITesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.pdproject.UITesting" />
       <module name="PDProject" />
       <extension name="coverage">
         <pattern>
@@ -175,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainLauncher" />
-        <item itemvalue="Application.ResultsController" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TopicMenuController" />
-        <item itemvalue="Application.MainMenuViewControl" />
+        <item itemvalue="Application.ChoiceGame" />
+        <item itemvalue="Application.GeneralQuizController" />
+        <item itemvalue="Application.UITesting" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -240,28 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687705415646</updated>
     </task>
-    <task id="LOCAL-00008" summary="Made english and General UI and controllers (not finished) just so u could use them na. :)">
-      <created>1687951676881</created>
+    <task id="LOCAL-00008" summary="Connection from menu to game works.">
+      <created>1688053012369</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1687951676881</updated>
+      <updated>1688053012369</updated>
     </task>
-    <task id="LOCAL-00009" summary="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned.">
-      <created>1688036947464</created>
+    <task id="LOCAL-00009" summary="Normal Flow attained.&#10;Added Backend for the following:&#10;- ResultsController&#10;- HighScoreController&#10;Fixed Image in MainMenuView.fxml">
+      <created>1688214591044</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1688036947464</updated>
+      <updated>1688214591044</updated>
     </task>
-    <task id="LOCAL-00010" summary="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned.">
-      <created>1688037002725</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1688037002725</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -270,9 +239,9 @@
     <MESSAGE value="Add SQL Connection, some practice files" />
     <MESSAGE value="Add SQL Connector jar" />
     <MESSAGE value="Added Temporary UI for MainMenuView.fxml and TopicMenuView.fxml as well as a few images. Also added TestingUi for UI testing." />
-    <MESSAGE value="Made english and General UI and controllers (not finished) just so u could use them na. :)" />
-    <MESSAGE value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned." />
-    <MESSAGE value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned. Yes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned. Yes" />
+    <MESSAGE value="Connection from menu to game works." />
+    <MESSAGE value="Normal Flow attained.&#10;Added Backend for the following:&#10;- ResultsController&#10;- HighScoreController&#10;Fixed Image in MainMenuView.fxml" />
+    <MESSAGE value="Added catch methods for SQL and Name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added catch methods for SQL and Name" />
   </component>
 </project>

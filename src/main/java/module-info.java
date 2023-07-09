@@ -4,6 +4,7 @@ module com.example.pdproject {
 
     requires com.dlsc.formsfx;
     requires java.sql;
+    requires mysql.connector.j;
 
     opens com.example.pdproject to javafx.fxml;
     exports com.example.pdproject;

@@ -1,5 +1,7 @@
 package com.main.Game;
 
+import javafx.scene.control.Alert;
+
 import java.sql.*;
 import java.util.Random;
 
@@ -21,15 +23,28 @@ public class SQLConnect{
         this.password = "root";
     }
     */
-    public SQLConnect(String url, String difficulty) throws ClassNotFoundException, SQLException {
+    public SQLConnect(String url, String difficulty) throws SQLException {
         this.url = url;
         this.difficulty = difficulty;
         this.username = "root";
         this.password = "root";
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        //Class.forName("com.mysql.jdbc.Driver");
-        this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+this.url,username,password);
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            //Class.forName("com.mysql.jdbc.Driver");
+        }catch (ClassNotFoundException e){
+            Alert alert = new Alert(Alert.AlertType.ERROR,"SQL not loaded. Contact your Teacher for help!");
+            alert.show();
+        }
+
+
+        try{
+            this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+this.url,username,password);
+        }catch (SQLException e){
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Wrong server. Contact your Teacher for help!");
+            alert.show();
+        }
+
         this.statement = connection.createStatement();
         //this.resultSet = statement.executeQuery("select * from " + sql); //english_quiz.easy (EX)
     }
