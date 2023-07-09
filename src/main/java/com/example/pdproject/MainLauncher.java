@@ -4,6 +4,7 @@ import javafx.animation.ScaleTransition;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
@@ -21,6 +22,8 @@ public class MainLauncher extends Application {
         Rectangle gradientRectangle = new Rectangle(1280, 720);
         gradientRectangle.setStyle("-fx-fill: linear-gradient(from 0% 0% to 100% 100%, purple, pink);");
         root.getChildren().add(0, gradientRectangle);
+
+        stage.getIcons().add(new Image("jetbrains://idea/navigate/reference?project=PD_Project&path=com/example/Images/logo.png"));
 
         Scene scene = new Scene(root, 1280, 720);
         stage.setTitle("Quiz Up! - Application");
