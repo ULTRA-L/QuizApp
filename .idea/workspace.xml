@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Images/logo.png" afterDir="false" />
+    <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Checking..">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MainLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MainLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/music.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688037002725</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Checking..">
+      <created>1688914567706</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688914567706</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -254,6 +259,7 @@
     <MESSAGE value="Made english and General UI and controllers (not finished) just so u could use them na. :)" />
     <MESSAGE value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned." />
     <MESSAGE value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned. Yes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected and fixed controllers and fxml, changed some designs on buttons and cleaned. Yes" />
+    <MESSAGE value="Checking.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Checking.." />
   </component>
 </project>

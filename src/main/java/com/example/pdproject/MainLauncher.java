@@ -23,7 +23,7 @@ public class MainLauncher extends Application {
         gradientRectangle.setStyle("-fx-fill: linear-gradient(from 0% 0% to 100% 100%, purple, pink);");
         root.getChildren().add(0, gradientRectangle);
 
-        stage.getIcons().add(new Image("jetbrains://idea/navigate/reference?project=PD_Project&path=com/example/Images/logo.png"));
+        stage.getIcons().add(new Image("C:\\Users\\Jean\\IdeaProjects\\PD_Project\\src\\main\\resources\\com\\example\\Images\\logo.png"));
 
         Scene scene = new Scene(root, 1280, 720);
         stage.setTitle("Quiz Up! - Application");
