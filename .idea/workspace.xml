@@ -10,64 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d367592-839e-4faf-ae0d-8884b7f05636" name="Changes" comment="Cleanup and easier Navigation. Working Jar Executable.">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PDProject_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/PDProject_jar/PDProject.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/JavaFXLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MainLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/MainLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/MathTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/test/MathTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/sqlConnectionPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/test/sqlConnectionPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdproject/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/test/testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/ChoiceGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/EnglishQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/EnglishQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/GeneralQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/GeneralQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/MathQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/MathQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/SQLConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/SQLConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/SceneSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/SceneSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Game/TimeThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/ChooseYourTopic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/ChooseYourTopic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/EnterNameLabel.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/EnterNameLabel.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/GeneralQuizLabel.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/GeneralQuizLabel.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/Thinking.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/Thinking.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/chooseDifficultyLabel.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/chooseDifficultyLabel.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/englishBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/englishBackground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/englishLabelTopic.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/englishLabelTopic.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/englishTopic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/englishTopic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/generalBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/generalBackground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/generalLabelTopic.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/generalLabelTopic.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/generalTopic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/generalTopic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/mathBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/mathBackground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/mathLabelTopic.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/mathLabelTopic.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/mathTopic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/mathTopic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/pinkBackgroundAbout.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/pinkBackgroundAbout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/quizAppTitle.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/quizAppTitle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/resultsLabel.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/resultsLabel.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/tonidoImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/tonidoImage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/vendiolaImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/vendiolaImage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/white question.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/whitequestion.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/Images/yellowBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Images/yellowBackground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/AboutUsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/AboutUsView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/ChoiceGameUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/ChoiceGameUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/DifficultyMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/DifficultyMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/EnglishQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/EnglishQuizView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/GeneralQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/GeneralQuizView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MainMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/MainMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/MathQuizView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/MathQuizView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/NameEntryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/NameEntryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/ResultsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/ResultsView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/Styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/Styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/Styles2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/TopicMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/TopicMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pdproject/highScoreView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/Game/highScoreView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/english_quiz.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/general_quiz.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/math_quiz.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +52,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/Users/Jean/IdeaProjects/PD_Project/src/main/java/com/example/pdproject",
-    "last_opened_file_path": "D:/PrivateProperty/Coding/JAVA/PD_Project/src/main/resources/com/main",
+    "last_opened_file_path": "D:/PrivateProperty/Coding/JAVA/PD_Project/sql",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -121,6 +66,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PrivateProperty\Coding\JAVA\PD_Project\sql" />
       <recent name="D:\PrivateProperty\Coding\JAVA\PDProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -299,8 +245,38 @@
       <option name="project" value="LOCAL" />
       <updated>1688214591044</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Cleanup and easier Navigation. Working Jar Executable.">
+      <created>1705512449690</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705512449690</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
