@@ -1,6 +1,5 @@
 package com.main.Game;
 
-import com.example.pdproject.MainLauncher;
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

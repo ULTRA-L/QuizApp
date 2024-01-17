@@ -6,8 +6,8 @@ module com.example.pdproject {
     requires java.sql;
     requires mysql.connector.j;
 
-    opens com.example.pdproject to javafx.fxml;
-    exports com.example.pdproject;
     exports com.main.Game;
     opens com.main.Game to javafx.fxml;
+    exports com.example.test;
+    opens com.example.test to javafx.fxml;
 }

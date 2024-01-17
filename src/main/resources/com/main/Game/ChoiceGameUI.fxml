@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Game.ChoiceController">
+   <children>
+      <Button id="next_button" fx:id="next_btn" layoutX="206.0" layoutY="346.0" mnemonicParsing="false" onAction="#onNextButtonClick" text="Next" />
+      <Label id="question_label" fx:id="question_label" alignment="CENTER" layoutX="55.0" layoutY="135.0" prefHeight="106.0" prefWidth="342.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label id="question_number" fx:id="question_number" alignment="CENTER" layoutX="55.0" layoutY="52.0" prefHeight="45.0" prefWidth="342.0" textAlignment="CENTER" underline="true" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ProgressBar id="progBar" fx:id="prog" layoutX="19.0" layoutY="22.0" prefWidth="200.0" progress="0.0" />
+      <HBox alignment="CENTER" layoutX="19.0" layoutY="294.0" prefHeight="26.0" prefWidth="414.0">
+         <children>
+            <RadioButton id="btn_A" fx:id="btn_A" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton id="btn_B" fx:id="btn_B" mnemonicParsing="false" text="RadioButton">
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton id="btn_C" fx:id="btn_C" mnemonicParsing="false" text="RadioButton" />
+         </children>
+      </HBox>
+      <Label id="time_label" fx:id="time_label" alignment="CENTER_RIGHT" layoutX="345.0" layoutY="23.0" prefHeight="18.0" prefWidth="88.0" text="Label" />
+   </children>
+</AnchorPane>

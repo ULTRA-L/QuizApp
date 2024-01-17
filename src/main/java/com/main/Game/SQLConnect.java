@@ -12,18 +12,7 @@ public class SQLConnect{
     private  String difficulty;
     private Connection connection;
     private Statement statement;
-    //private int score;
-    //private int time;
-    //private ResultSet resultSet;
-    /*
-    public SQLConnect(String sql){
-        this.sql = sql;
-        this.url = "jdbc:mysql://localhost:3306/english_quiz";
-        this.username = "root";
-        this.password = "root";
-    }
-    */
-    public SQLConnect(String url, String difficulty) throws SQLException {
+    public SQLConnect(String url, String difficulty) {
         this.url = url;
         this.difficulty = difficulty;
         this.username = "root";
@@ -40,26 +29,14 @@ public class SQLConnect{
 
         try{
             this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+this.url,username,password);
+            this.statement = connection.createStatement();
         }catch (SQLException e){
             Alert alert = new Alert(Alert.AlertType.ERROR, "Wrong server. Contact your Teacher for help!");
             alert.show();
         }
-
-        this.statement = connection.createStatement();
         //this.resultSet = statement.executeQuery("select * from " + sql); //english_quiz.easy (EX)
     }
-    //public SQLConnect(String url, String sql, int score, int time) throws SQLException, ClassNotFoundException {
-    //    this.url = url;
-    //    this.sql = sql;
-    //    this.score = score;
-    //    this.time = time;
-    //    this.username = "root";
-    //    this.password = "root";
 
-    //    Class.forName("com.mysql.cj.jdbc.Driver");
-    //    this.connection = DriverManager.getConnection(url,username,password);
-    //    this.statement = connection.createStatement();
-    //};
     public void saveScore(String name, int mark, int time, int score) throws SQLException {
         //String execute = "INSERT INTO `math_quiz`.`score` (`Name`, `Score`, `Time`) VALUES ('Loyd', '10', '120');" EXAMPLE
         String execute = "INSERT INTO `"+ url +"`.`score_"+ difficulty +"` (`Name`, `Mark`, `Time`, `Score`) VALUES ('"+ name + "', '"+ mark +"', '"+ time +"', '"+ score +"')";
@@ -93,7 +70,7 @@ public class SQLConnect{
         return result;
     }
 
-    public int getCount(int num_questions) throws SQLException {
+    private int getCount() throws SQLException {
         ResultSet count = statement.executeQuery("select count(*) from "+ difficulty);
         count.next();
         int total_questions = count.getInt(1);
@@ -102,7 +79,7 @@ public class SQLConnect{
     }
 
     public String[][] generateQuestion(int num_questions) throws SQLException {
-        int total_questions = getCount(num_questions);
+        int total_questions = getCount();
 
         ResultSet resultSet = statement.executeQuery("select * from "+ difficulty);
         String[][] res = new String[total_questions][6];

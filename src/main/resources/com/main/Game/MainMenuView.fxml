@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainViewAnchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: be91ee;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Game.MainViewController">
+   <children>
+      <AnchorPane layoutX="88.0" layoutY="57.0" prefHeight="607.0" prefWidth="1105.0" style="-fx-background-color: ffffff; -fx-background-radius: 35; -fx-border-color: a465e7; -fx-border-radius: 33;" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="87.0" AnchorPane.topAnchor="57.0">
+         <children>
+            <Button id="btnStart" fx:id="btnStart" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="230.0" lineSpacing="3.0" mnemonicParsing="false" onAction="#loadNextScene" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: #f66fb3; -fx-text-fill: white;" stylesheets="@Styles.css" text="PLAY" textAlignment="CENTER">
+               <font>
+                  <Font name="HARMONY" size="41.0" />
+               </font>
+            </Button>
+            <Button id="btnExit" fx:id="btnExit" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="458.0" lineSpacing="3.0" mnemonicParsing="false" onAction="#onExitPress" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: a465e7; -fx-text-fill: white;" stylesheets="@Styles.css" text="EXIT" textAlignment="CENTER">
+               <font>
+                  <Font name="HARMONY" size="41.0" />
+               </font>
+            </Button>
+            <Button id="btnAbout" fx:id="btnAbout" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="330.0" lineSpacing="3.0" mnemonicParsing="false" onAction="#onToAbout" prefHeight="65.0" prefWidth="288.0" style="-fx-background-radius: 35; -fx-font-size: 35; -fx-background-color: #f66fb3; -fx-text-fill: white;" stylesheets="@Styles.css" text="ABOUT" textAlignment="CENTER">
+               <font>
+                  <Font name="HARMONY" size="41.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="title" fitHeight="297.0" fitWidth="703.0" layoutX="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/quizAppTitle.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

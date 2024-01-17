@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: com.main.Game.JavaFXLauncher
+Class-Path: javafx-controls-18.0.2-win.jar javafx-graphics-18.0.2.jar an
+ notations-24.1.0.jar javafx-graphics-18.0.2-win.jar javafx-fxml-18.0.2.
+ jar javafx-fxml-18.0.2-win.jar formsfx-core-11.6.0.jar javafx-base-18.0
+ .2-win.jar mysql-connector-j-8.0.33.jar javafx-controls-18.0.2.jar java
+ fx-base-18.0.2.jar
+

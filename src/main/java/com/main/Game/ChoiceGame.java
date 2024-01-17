@@ -1,6 +1,5 @@
 package com.main.Game;
 
-import com.example.pdproject.HelloApplication;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
@@ -14,7 +13,7 @@ import java.io.IOException;
 
 public class ChoiceGame extends Application {
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("EnglishQuizView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainLauncher.class.getResource("EnglishQuizView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
 
         ToggleButton btnChoice1 = new ToggleButton("Button 1");

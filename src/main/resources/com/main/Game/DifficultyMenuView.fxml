@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="difficultyMenuAnchor" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: f96b70; -fx-background-size: 30;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Game.DifficultyMenuController">
+   <children>
+      <AnchorPane layoutX="75.0" layoutY="72.0" prefHeight="576.0" prefWidth="507.0" styleClass="anchorPaneMainTopic">
+         <children>
+            <ImageView fitHeight="447.0" fitWidth="454.0" layoutX="20.0" layoutY="130.0">
+               <image>
+                  <Image url="@../Images/Thinking.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="634.0" layoutY="72.0" prefHeight="249.0" prefWidth="593.0" styleClass="anchorPaneMainTopic">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="397.0" layoutX="98.0" layoutY="23.0">
+               <image>
+                  <Image url="@../Images/chooseDifficultyLabel.PNG" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="172.0" layoutY="201.0" prefHeight="21.0" prefWidth="266.0" text="What would you like to go for?" textFill="#949494">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button id="difficultyButtonsStyle" fx:id="btnEasyChoice" layoutX="634.0" layoutY="360.0" mnemonicParsing="false" onAction="#chooseEasy" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="EASY">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnMediumChoice" layoutX="634.0" layoutY="450.0" mnemonicParsing="false" onAction="#chooseMedium" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="MEDIUM">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnHardChoice" layoutX="634.0" layoutY="541.0" mnemonicParsing="false" onAction="#chooseHard" prefHeight="65.0" prefWidth="593.0" styleClass="difficultyButtonsStyle" stylesheets="@Styles.css" text="HARD">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
